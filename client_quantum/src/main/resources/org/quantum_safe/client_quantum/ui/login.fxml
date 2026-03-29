@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.quantum_safe.client_quantum.Controller.LoginController">
+
+   <children>
+
+      <AnchorPane layoutX="149.0" layoutY="95.0" prefHeight="230.0" prefWidth="318.0" style="-fx-background-color: #FFFFE0; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: yellow;">
+
+         <children>
+
+            <Label alignment="CENTER" layoutX="1.0" layoutY="1.0" prefHeight="51.0" prefWidth="314.0" style="-fx-background-color: #9370DB; -fx-background-radius: 20;" text="Login To Your Account" textAlignment="CENTER">
+
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+
+            </Label>
+
+            <!-- Email Field -->
+            <TextField fx:id="emailField" layoutX="40.0" layoutY="100.0" prefHeight="26.0" prefWidth="235.0" promptText="Enter Your Email" style="-fx-border-radius: 20;">
+
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+
+            </TextField>
+
+            <!-- Password Field -->
+            <PasswordField fx:id="passwordField" layoutX="40.0" layoutY="148.0" prefHeight="26.0" prefWidth="235.0" promptText="Enter Your Password" style="-fx-border-radius: 20;">
+
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+
+            </PasswordField>
+
+            <!-- Login Button -->
+            <Button fx:id="loginButton" layoutX="133.0" layoutY="190.0" mnemonicParsing="false" style="-fx-background-color: #9370db;" text="Login">
+
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+
+            </Button>
+
+         </children>
+
+      </AnchorPane>
+
+      <!-- Register Link -->
+      <Hyperlink fx:id="registerLink" alignment="CENTER" layoutX="154.0" layoutY="340.0" prefHeight="24.0" prefWidth="312.0" text="Don't Have an Account? Register.">
+
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+
+      </Hyperlink>
+
+      <Label alignment="CENTER" layoutX="128.0" layoutY="32.0" prefHeight="40.0" prefWidth="353.0" text="Quantum Safe Messenger" textFill="#3e217b">
+
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font>
+
+      </Label>
+
+   </children>
+
+</AnchorPane>
